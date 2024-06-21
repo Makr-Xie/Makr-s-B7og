@@ -1,8 +1,8 @@
 ---
-  title: 凡是上帝自己创造而不引以为羞耻的东西，我们也不应当引为羞耻而不说
+  title: 《性心理学》笔记
   pubDate: 2024-06-21
   categories: ["杂七杂八"]
-  description: '《性心理学》笔记'
+  description: '凡是上帝自己创造而不引以为羞耻的东西，我们也不应当引为羞耻而不说'
 ---
 
 <!-- POS aka Psychology of Sex. -->
