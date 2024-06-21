@@ -143,6 +143,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"Psychology of Sex.md": {
+	id: "Psychology of Sex.md";
+  slug: "psychology-of-sex";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "being mortal.md": {
 	id: "being mortal.md";
   slug: "being-mortal";
@@ -157,9 +164,9 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"浪潮之巅.md": {
-	id: "浪潮之巅.md";
-  slug: "浪潮之巅";
+"浪潮-商业模式.md": {
+	id: "浪潮-商业模式.md";
+  slug: "浪潮-商业模式";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
