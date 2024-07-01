@@ -143,6 +143,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"Beijing.md": {
+	id: "Beijing.md";
+  slug: "beijing";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "Psychology of Sex.md": {
 	id: "Psychology of Sex.md";
   slug: "psychology-of-sex";
@@ -160,13 +167,6 @@ declare module 'astro:content' {
 "create-astro-component.md": {
 	id: "create-astro-component.md";
   slug: "create-astro-component";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"性的道德.md": {
-	id: "性的道德.md";
-  slug: "性的道德";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
