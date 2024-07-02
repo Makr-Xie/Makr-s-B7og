@@ -1,6 +1,6 @@
 ---
   title: 北京小记
-  pubDate: 2024-07-1
+  pubDate: 2024-07-2
   categories: ["杂七杂八"]
   description: ''
 ---
@@ -11,7 +11,12 @@
 
 ---
 
-翌日，随缘派随到了天坛和雍和宫。天坛的树很老，我开玩笑地说，在天坛，稀奇的应该是比我们年轻的树。在树荫下乘凉时，不禁想，200年前的此刻树下会不会也有个人在为一些事儿烦恼呢？进到坛里，人多了起来，光顾着走位便没空想了。我是不愿挤的，但母亲乐意做，儿子的总得奉陪，毕竟这才是第一个地方。一边打卡一边咔，总归是出了几张满意的图。
+翌日，随缘派随到了天坛和雍和宫。天坛的树很老，我开玩笑地说，在天坛，稀奇的应该是比我们年轻的树。在树荫下乘凉时，不禁想，200年前的此刻树下会不会也有个人在为一些事儿烦恼呢？进到坛里，人多了起来，光顾着走位便没空想了。我是不愿挤的，但母亲乐意做，儿子的总得奉陪，毕竟这才是第一个地方。一边打卡一边咔，总归是出了几张还算满意的图。
+
+<div style="display: flex; gap: 5px;">
+  <img src="/pics/Beijing/红门.jpg" alt="red door" style="width: 50%; height: auto; border-radius: 5px;">
+  <img src="/pics/Beijing/绿.jpg" alt="第三张照片" style="width: 50%; height: auto; border-radius: 5px;">
+</div>
 
 下午的雍和宫倒没那么有意思了，烧香拜佛之地；我对佛教的那种充类至尽的思想并不怎么感冒，或许是我还年轻的缘故。但虽不信佛，拜一拜世间美好之物倒也无妨。
 
@@ -23,9 +28,20 @@
 
 靠谱的带着我在鼓楼和什刹海周围走了走，还不自量力地尝了豆汁。豆汁这玩意儿分两段：刚入口时倒是颇似绿豆沙，未见得苦。但等那酸味一上来就叫人难以忘怀了，酸苦酸苦，像是夏天垃圾桶里炖了几天的剩菜的味儿。我本着“尝尝鲜”的心态，如果像小时候喝药那般一口灌下去，倒也罢了，但错就错在这“品尝”的念头。来都来了，咽下去岂不可惜了，只得狠下心来让味蕾受罪。这滋味实在是苦，恐怕不会有第二次了。
 
+<div style="text-align: center;">
+  <img src="/pics/Beijing/豆汁.jpg" alt="" style="width: 40%; height: auto; border-radius: 5px;  margin-left: auto;
+  margin-right: auto;">
+</div>
+
 喝茶时险些喝进虫子 （Shit Bruh!），但因祸得福，又尝了豆花。豆花倒是不错，甜凉甜凉的。可惜里面加了米，有些影响口感，或许是因为担心再吃到虫子，毕竟都是白色的，心里总有些膈应。
 
 什刹海去得早了些，在楼上的咖啡店里消磨了些时光，才到海边逛逛。人还是很多，加上周边酒吧吵闹的DJ声，把刚才在楼上吹风积攒的那份悠闲搅了个一干二净，真不好。
+
+<div style="display: flex; gap: 5px;">
+  <img src="/pics/Beijing/窗.jpg" alt="red door" style="width: 33%; height: auto; border-radius: 5px;">
+  <img src="/pics/Beijing/楼.jpg" alt="第三张照片" style="width: 33%; height: auto; border-radius: 5px;">
+  <img src="/pics/Beijing/钉子.jpg" alt="第三张照片" style="width: 33%; height: auto; border-radius: 5px;">
+</div>
 
 至于那位不靠谱的朋友，压根儿没来，一直到晚饭后才见着面。所以行程倒也没被搞得不靠谱。或许不管什么事情，只要做到极致，都是好的。
 
