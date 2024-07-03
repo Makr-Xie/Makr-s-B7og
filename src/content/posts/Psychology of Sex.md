@@ -1,7 +1,7 @@
 ---
   title: 《性心理学》笔记
   pubDate: 2024-06-24
-  categories: ["一些笔记"]
+  categories: ["笔记"]
   description: '凡是上帝自己创造而不引以为羞耻的东西，我们也不应当引为羞耻而不说'
 ---
 
