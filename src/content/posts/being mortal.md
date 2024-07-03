@@ -1,7 +1,7 @@
 ---
   title: 读《最好的告别》随笔
   pubDate: 2024-05-20
-  categories: ["杂七杂八"]
+  categories: ["一些笔记"]
   description: ''
 ---
 
