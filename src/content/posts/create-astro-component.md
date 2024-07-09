@@ -5,7 +5,7 @@ pubDate: 'Jul 02 2022'
 categories: ['Astro']
 ---
 
-**If you know HTML, you already know enough to write your first Astro component.**
+**If you know HTML, you already know enough to write your first Astro component！**
 
 Astro component syntax is a superset of HTML. The syntax was [designed to feel familiar to anyone with experience writing HTML or JSX](#differences-between-astro-and-jsx), and adds support for including components and JavaScript expressions.
 
