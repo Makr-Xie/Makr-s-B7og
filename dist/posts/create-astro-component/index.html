@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"> <head><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v4.11.5"><title>Tutorial: Create an Astro Component</title><meta charset="utf-8"><link rel="canonical" href="https://astro-theme-typography.vercel.app/posts/create-astro-component/"><meta name="description" content="Learn how to create your first Astro component."><meta name="robots" content="index, follow"><meta property="og:title" content="Tutorial: Create an Astro Component"><meta property="og:type" content="article"><meta property="og:image" content="https://astro-theme-typography.vercel.app/placeholder.png"><meta property="og:url" content="https://astro-theme-typography.vercel.app/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="twitter:image:src" content="https://astro-theme-typography.vercel.app/placeholder.png"><meta name="twitter:image:alt" content="Learn how to create your first Astro component."><meta name="twitter:creator" content="@moeyua13"><meta name="twitter:site" content="@moeyua13"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Tutorial: Create an Astro Component"><meta name="twitter:description" content="Learn how to create your first Astro component."><link rel="stylesheet" href="/_astro/about.DBk-KQcv.css">
+<style>.tk-meta-input{background-color:#fff}.code-container{position:relative}.clipboard-copy{position:absolute;top:.5rem;right:.5rem;width:1.75rem;height:1.75rem;display:flex;justify-content:center;align-items:center;border-radius:.25rem}.clipboard-copy:hover{background-color:#30363d}
+</style><script type="module" src="/_astro/hoisted.GAMxWTaO.js"></script>
+<script type="module" src="/_astro/page.DFwqf4PB.js"></script></head> <body> <div un-max-lg="animate-fadein-down" un-lg="flex flex-row-reverse justify-between gap-4 px-8 mx-auto max-w-6xl" class="container contain-layout m-a"> <div un-lg="sticky top-0 h-screen py-20 animate-fadein-left gap-8" un-lg:flex="~ col justify-between items-start gap-4" class="p-7.5"> <header un-lg="grow-1 justify-between items-start" un-flex="~ col gap-2.5" class="text-center"> <hgroup un-hover:lg="bg-foreground color-background pt-3.75 pb-8.75 " un-lg=" write-vertical-right items-start px-2.5 pb-12 b-l-2px b-l-foreground-solid text-left" un-flex="~ col gap-2.5" class="cursor-pointer transition-[padding,background] duration-800 ease-in-out"> <a class="normal" href="/"> <h3 class="text-5 font-extrabold font-serif">Makr Xie</h3> <h1 class="text-8 font-extrabold font-serif">孤独の柒</h1> </a> </hgroup> <nav class="text-center font-bold" un-flex="~ col gap-2"> <ul un-lg="flex-col items-start text-4" class="text-3.5" un-flex="~ row gap-2 justify-center"> <li> <a href="/posts/page/1">Posts</a> </li><li> <a href="/archive">Archive</a> </li><li> <a href="/categories">Categories</a> </li><li> <a href="/about">About</a> </li> </ul> <ul un-flex="~ row gap-1 justify-center"> <li> <a href="https://github.com/Makr-Xie" target="_blank" title="github" class="icon i-mdi-github"></a> </li><li> <a href="/atom.xml" target="_blank" title="rss" class="icon i-mdi-rss"></a> </li><li> <a href="" target="_blank" title="twitter" class="icon i-mdi-twitter"></a> </li><li> <a href="" target="_blank" title="account" class="icon i-mdi-account"></a> </li> </ul> </nav> </header> <footer font-bold text-3 un-flex="~ col gap-1" un-lg="gap-3.5" class="max-lg:hidden"> <p>
+© 2024 <a target="_blank" href="https://astro-theme-typography.vercel.app/" rel="noopener noreferrer">Makr Xie</a> </p> <p>
+Theme
+<a target="_blank" href="https://github.com/Moeyua/astro-theme-typography" rel="noopener noreferrer">Typography</a>
+by <a target="_blank" href="https://moeyua.com" rel="noopener noreferrer">Moeyua</a> </p> <p>
+Proudly published with
+<a target="_blank" href="https://astro.build" rel="noopener noreferrer">Astro</a> </p> </footer> </div> <main un-lg="py-20 min-w-xl animate-fadein-down" class="p-7.5">  <article class="heti"> <header> <h1 class="post-title!"> <a href="/posts/create-astro-component/">Tutorial: Create an Astro Component</a> </h1> <div class="mt-2 text-3.5"> <span>Posted at</span> <time>2022-07-02</time> <a class="ml-2.5" href="/categories/Astro">
+# Astro </a> </div> </header>  <p><strong>If you know HTML, you already know enough to write your first Astro component！</strong></p>
+<p>Astro component syntax is a superset of HTML. The syntax was <a href="#differences-between-astro-and-jsx">designed to feel familiar to anyone with experience writing HTML or JSX</a>, and adds support for including components and JavaScript expressions.</p>
+<h2 id="jsx-like-expressions">JSX-like Expressions</h2>
+<p>You can define local JavaScript variables inside of the frontmatter component script between the two code fences (<code>---</code>) of an Astro component. You can then inject these variables into the component’s HTML template using JSX-like expressions!</p>
+<p>:::note[dynamic vs reactive]
+Using this approach, you can include <strong>dynamic</strong> values that are calculated in the frontmatter. But once included, these values are not <strong>reactive</strong> and will never change. Astro components are templates that only run once, during the rendering step.</p>
+<p>See below for more examples of <a href="#differences-between-astro-and-jsx">differences between Astro and JSX</a>.
+:::</p>
+<h3 id="variables">Variables</h3>
+<p>Local variables can be added into the HTML using the curly braces syntax:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> name</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> 'Astro'</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">	&#x3C;</span><span style="color:#85E89D">h1</span><span style="color:#E1E4E8">>Hello {name}!&#x3C;/</span><span style="color:#85E89D">h1</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#6A737D">	&#x3C;!-- Outputs &#x3C;h1>Hello Astro!&#x3C;/h1> --></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">></span></span>
+<span class="line"></span></code></pre>
+<h3 id="dynamic-attributes">Dynamic Attributes</h3>
+<p>Local variables can be used in curly braces to pass attribute values to both HTML elements and components:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> name</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> 'Astro'</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">h1</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">={name}>Attribute expressions are supported&#x3C;/</span><span style="color:#85E89D">h1</span><span style="color:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#79B8FF">MyComponent</span><span style="color:#B392F0"> templateLiteralNameAttribute</span><span style="color:#E1E4E8">={</span><span style="color:#9ECBFF">`MyNameIs${</span><span style="color:#E1E4E8">name</span><span style="color:#9ECBFF">}`</span><span style="color:#E1E4E8">} /></span></span>
+<span class="line"></span></code></pre>
+<p>:::caution
+HTML attributes will be converted to strings, so it is not possible to pass functions and objects to HTML elements.
+For example, you can’t assign an event handler to an HTML element in an Astro component:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#6A737D">// dont-do-this.astro</span></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> handleClick</span><span style="color:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#E1E4E8">	console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'button clicked!'</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">&#x3C;!-- ❌ This doesn't work! ❌ --></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">button</span><span style="color:#B392F0"> onClick</span><span style="color:#E1E4E8">={handleClick}>Nothing will happen when you click me!&#x3C;/</span><span style="color:#85E89D">button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"></span></code></pre>
+<p>Instead, use a client-side script to add the event handler, like you would in vanilla JavaScript:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#6A737D">// do-this-instead.astro</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">button</span><span style="color:#B392F0"> id</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">'button'</span><span style="color:#E1E4E8">>Click Me&#x3C;/</span><span style="color:#85E89D">button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#F97583">	function</span><span style="color:#B392F0"> handleClick</span><span style="color:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#E1E4E8">		console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'button clicked!'</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">	}</span></span>
+<span class="line"><span style="color:#E1E4E8">	document.</span><span style="color:#B392F0">getElementById</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'button'</span><span style="color:#E1E4E8">).</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'click'</span><span style="color:#E1E4E8">, handleClick)</span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">></span></span>
+<span class="line"></span></code></pre>  </article> <footer class="mt-5">  <p class="flex items-center gap-2"> <span class="inline-flex items-center"> <i class="i-mdi-chevron-double-left icon"></i> <a href="/posts/1900">Previous post: 柯希莫与1900</a> </span>  </p> </footer> <!-- <footer class="mt-5">
+  <p class="mb-2.5">{t('page_number', page.currentPage)} / {t('page_count', page.lastPage)}</p>
+  <p class="flex items-center gap-2">
+    <span class="inline-flex items-center">
+      <i class="i-mdi-chevron-double-left icon"></i>
+      {page.url.prev ? <a href={page.url.prev}> {t('prev')} </a> : <span>{t('prev')}</span>}
+    </span>
+
+    <span class="inline-flex items-center">
+      {page.url.next ? <a href={page.url.next}>{t('next')}</a> : <span>{t('next')}</span>}
+      <i class="i-mdi-chevron-double-right icon"></i>
+    </span>
+  </p>
+</footer> -->  <div py-16>     </div>  </main> <footer font-bold text-3 un-flex="~ col gap-1" un-lg="gap-3.5" class="lg:hidden p-7.5"> <p>
+© 2024 <a target="_blank" href="https://astro-theme-typography.vercel.app/" rel="noopener noreferrer">Makr Xie</a> </p> <p>
+Theme
+<a target="_blank" href="https://github.com/Moeyua/astro-theme-typography" rel="noopener noreferrer">Typography</a>
+by <a target="_blank" href="https://moeyua.com" rel="noopener noreferrer">Moeyua</a> </p> <p>
+Proudly published with
+<a target="_blank" href="https://astro.build" rel="noopener noreferrer">Astro</a> </p> </footer> </div> </body></html>  
