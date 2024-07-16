@@ -143,13 +143,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"7.5.md": {
-	id: "7.5.md";
-  slug: "75";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "Beijing.md": {
 	id: "Beijing.md";
   slug: "beijing";
@@ -160,6 +153,13 @@ declare module 'astro:content' {
 "Psychology of Sex.md": {
 	id: "Psychology of Sex.md";
   slug: "psychology-of-sex";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"Use Mermaid in Astro’s md.md": {
+	id: "Use Mermaid in Astro’s md.md";
+  slug: "use-mermaid-in-astros-md";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
