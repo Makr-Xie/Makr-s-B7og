@@ -192,6 +192,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"记一次coffee chat.md": {
+	id: "记一次coffee chat.md";
+  slug: "记一次coffee-chat";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};
