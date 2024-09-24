@@ -178,6 +178,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"openmind.md": {
+	id: "openmind.md";
+  slug: "openmind";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "伊犁环线小记.md": {
 	id: "伊犁环线小记.md";
   slug: "伊犁环线小记";
