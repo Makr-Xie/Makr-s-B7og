@@ -171,6 +171,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"btw250.md": {
+	id: "btw250.md";
+  slug: "btw250";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "create-astro-component.md": {
 	id: "create-astro-component.md";
   slug: "create-astro-component";
