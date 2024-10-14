@@ -1,6 +1,5 @@
 ---
 import '~/styles/index.css'
-// https://sivan.github.io/heti
 import '~/styles/heti.min.css'
 import Header from '~/components/Header.astro'
 import Footer from '~/components/Footer.astro'
@@ -13,23 +12,23 @@ interface Props {
   banner?: ImageMetadata
 }
 
-const props = Astro.props
-const themeConfig = Astro.locals.config
-const { header } = Astro.locals.config
+const props = Astro.props;
+const themeConfig = Astro.locals.config;
+const { header } = Astro.locals.config;
 
-const title = props.title ?? themeConfig.title
-const desc = props.desc ?? themeConfig.desc
-const canonical = themeConfig.website
+const title = props.title ?? themeConfig.title;
+const desc = props.desc ?? themeConfig.desc;
+const canonical = themeConfig.website;
 
-const image =
-  props.banner &&
-  (await getImage({
+let optimizedImage = "/placeholder.png";
+if (props.banner) {
+  const image = await getImage({
     src: props.banner,
-    format: "jpeg"
-  }))
-const optimizedImage = new URL(image?.src??"/placeholder.png", Astro.url).toString()
+    format: "jpeg",
+  });
+  optimizedImage = new URL(image.src, Astro.url).toString();
+}
 ---
-
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width" />
@@ -58,6 +57,13 @@ const optimizedImage = new URL(image?.src??"/placeholder.png", Astro.url).toStri
           url: canonical,
         }
       }}
+    />
+    <!-- 引入 KaTeX 样式 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+      integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
+      crossorigin="anonymous"
     />
   </head>
   <body>
