@@ -13,6 +13,21 @@ function getCategoryUrl(category: string) {
 }
 ---
 
+<style>
+  article.heti {
+    max-width: 800px; /* 扩大宽度 */
+    margin: -30;
+  }
+
+  article.heti p {
+    font-size: 1.1rem !important;  /* 细化字体大小 */
+    font-weight: 300 !important;   /* 字体变细 */
+    line-height: 1.6 !important;   /* 调整行距 */
+  }
+
+</style>
+
+
 <article class="heti">
   <header>
     <h1 class="post-title!">
@@ -31,6 +46,7 @@ function getCategoryUrl(category: string) {
       }
     </div>
   </header>
+
   <slot />
 </article>
 
