@@ -1,26 +1,28 @@
 ---
-import LayoutDefault from "~/layouts/LayoutDefault.astro"
+import LayoutDefault from '~/layouts/LayoutDefault.astro';
+import { Content as AboutContent } from './about.md';  // Import Markdown content
+
+// Optionally, define metadata for the About page
+const entry = {
+  data: {
+    title: 'About Me',
+    description: 'Learn more about Mark (Yixuan Xie) and his journey in Computer Science.',
+    banner: '/path/to/banner.jpg',  // Optional banner image for the page
+  }
+};
 ---
 
+<!-- Use LayoutDefault to wrap the entire page -->
+<LayoutDefault >
+  <!-- Use Post component to wrap the main content -->
+  <article class="heti">
+    <!-- Render the Markdown content for the About page -->
+    <AboutContent />
+  </article>
+</LayoutDefault>
 
 
-
-<LayoutDefault>
-    <style>
-    myText {
-        font-size: medium;
-        /* text-decoration-line: underline; */
-        font-weight: 600;
-    }
-    
-    p {
-        font-size: large;
-        /* text-decoration-line: underline; */
-        font-weight: 500;
-    }
-    </style>
-
-    <p><sub>A little bit</sub><strong><font size="5">About Me</font></strong></p>
+    <!-- <p><sub>A little bit</sub><strong><font size="5">About Me</font></strong></p>
     <br>
 
     <p> Hi, nice to have you here!🧡💙</p>
@@ -61,7 +63,7 @@ import LayoutDefault from "~/layouts/LayoutDefault.astro"
         
         <br><br> --- 《写在人生边上》
         </myText>
-    </p>
+    </p> -->
 
 
-</LayoutDefault>
+</LayoutDefault> -->
