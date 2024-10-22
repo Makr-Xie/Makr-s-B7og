@@ -29,6 +29,9 @@ if (props.banner) {
   optimizedImage = new URL(image.src, Astro.url).toString();
 }
 ---
+
+
+
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width" />
@@ -66,6 +69,7 @@ if (props.banner) {
       crossorigin="anonymous"
     />
   </head>
+  
   <body>
     <div un-max-lg="animate-fadein-down" un-lg="flex flex-row-reverse justify-between gap-4 px-8 mx-auto max-w-6xl" class="container contain-layout m-a">
       <div un-lg="sticky top-0 h-screen py-20 animate-fadein-left gap-8" un-lg:flex="~ col justify-between items-start gap-4" class="p-7.5">

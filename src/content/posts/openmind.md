@@ -1,8 +1,8 @@
 ---
-  title: Open Mind 的异化
+  title: Open Mind ？
   pubDate: 2024-09-24
   categories: ["杂七杂八"]
-  description: ''
+  description: '吃吃火锅扯扯淡'
 ---
 
 前几天和朋友吃火锅时，聊到了一个挺有意思的话题：当我以open mind的心态去了解他人、理解一些事物时，会不会不知不觉中变成了一种强迫？以“open mind”为借口，去理解和接受那些我本身其实不太能理解的东西？最初是为了更好的看待世界而理解，结果却变成了“为了理解而理解”。
