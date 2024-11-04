@@ -37,7 +37,6 @@ article.heti a code:hover {
   text-decoration-line: none;
 }
 
-
 a:hover {
   color: theme("colors.background");
   background-color: theme("colors.foreground");
@@ -49,6 +48,7 @@ a.normal {
   /* border: none; */
   transition: none;
   text-decoration: none;
+  text-decoration-color: black;
 }
 
 a.normal:hover {
@@ -96,4 +96,14 @@ article.heti blockquote {
 article.heti blockquote p {
   margin-block-start: 12px;
   margin-block-end: 12px;
+}
+
+/*自定义的一些CSS */
+
+article.heti {
+  /* max-width: 700px; 扩大宽度 */
+  /* margin-left: 20px; */
+  font-size: medium;
+  font-weight: 320;
+  font-family:  'Times New Roman', Times, serif;
 }
