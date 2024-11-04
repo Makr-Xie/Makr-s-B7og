@@ -19,7 +19,7 @@ posts.forEach((post: Post) => {
 ---
 
 <LayoutDefault>
-  <div un-flex="~ col gap-4">
+  <div un-flex="~ col gap-4" >
     {
       Array.from(postByYear.entries()).map(([year, posts]) => (
         <ListSection title={year}>

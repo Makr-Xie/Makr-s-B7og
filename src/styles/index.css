@@ -107,3 +107,7 @@ article.heti {
   font-weight: 320;
   font-family:  'Times New Roman', Times, serif;
 }
+
+h1.heti, .post-title, .ml-6{
+  font-family: 'Times New Roman', Times, serif;
+}
