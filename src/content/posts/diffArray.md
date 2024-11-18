@@ -42,3 +42,5 @@ vector<int> getModifiedArray(int length, vector<vector<int>>& updates) {
 ```
 
 屌吧？反正屌到我这个渣渣了。
+
+Reference: https://codeforces.com/blog/entry/78762
