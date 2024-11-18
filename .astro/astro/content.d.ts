@@ -156,112 +156,119 @@ declare module 'astro:content' {
   slug: "11-3";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "1900.md": {
 	id: "1900.md";
   slug: "1900";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "Beijing.md": {
 	id: "Beijing.md";
   slug: "beijing";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "Psychology of Sex.md": {
 	id: "Psychology of Sex.md";
   slug: "psychology-of-sex";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "Use Mermaid in Astro’s md.md": {
 	id: "Use Mermaid in Astro’s md.md";
   slug: "use-mermaid-in-astros-md";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "being mortal.md": {
 	id: "being mortal.md";
   slug: "being-mortal";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "btw250.md": {
 	id: "btw250.md";
   slug: "btw250";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "cost & query optimization.md": {
 	id: "cost & query optimization.md";
   slug: "cost--query-optimization";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "create-astro-component.md": {
 	id: "create-astro-component.md";
   slug: "create-astro-component";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"diffArray.md": {
+	id: "diffArray.md";
+  slug: "diffarray";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "lc1942.md": {
 	id: "lc1942.md";
   slug: "lc1942";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "lc3320.md": {
 	id: "lc3320.md";
   slug: "lc3320";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "lock & serializability.md": {
 	id: "lock & serializability.md";
   slug: "lock--serializability";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "openmind.md": {
 	id: "openmind.md";
   slug: "openmind";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "伊犁环线小记.md": {
 	id: "伊犁环线小记.md";
   slug: "伊犁环线小记";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "浪潮-商业模式.md": {
 	id: "浪潮-商业模式.md";
   slug: "浪潮-商业模式";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "记一次coffee chat.md": {
 	id: "记一次coffee chat.md";
   slug: "记一次coffee-chat";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 };
 
@@ -273,5 +280,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
