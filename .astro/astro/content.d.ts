@@ -256,6 +256,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"当阳光跳进眼里.md": {
+	id: "当阳光跳进眼里.md";
+  slug: "当阳光跳进眼里";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "浪潮-商业模式.md": {
 	id: "浪潮-商业模式.md";
   slug: "浪潮-商业模式";
