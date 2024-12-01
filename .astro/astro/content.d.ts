@@ -207,13 +207,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"create-astro-component.md": {
-	id: "create-astro-component.md";
-  slug: "create-astro-component";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "diffArray.md": {
 	id: "diffArray.md";
   slug: "diffarray";
