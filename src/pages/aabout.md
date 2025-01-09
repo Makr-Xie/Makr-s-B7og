@@ -14,3 +14,5 @@ The word "**孤独の柒**" on the side means A Lonely Seven.
 
 It's a blend of the evocative phrase “**Either lonely or vulgar**”, and my cherished number "**7**". Though, at the time I coined this name, I had not yet delved into the works of Schopenhauer. My affection for the number 7 was inspired by the poem, “The Square Root of Three.”
 
+
+

@@ -186,6 +186,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"awdl0.md": {
+	id: "awdl0.md";
+  slug: "awdl0";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "being mortal.md": {
 	id: "being mortal.md";
   slug: "being-mortal";
@@ -245,13 +252,6 @@ declare module 'astro:content' {
 "伊犁环线小记.md": {
 	id: "伊犁环线小记.md";
   slug: "伊犁环线小记";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"当阳光跳进眼里.md": {
-	id: "当阳光跳进眼里.md";
-  slug: "当阳光跳进眼里";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
