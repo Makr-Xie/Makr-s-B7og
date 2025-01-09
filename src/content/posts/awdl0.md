@@ -43,17 +43,17 @@ done
 不过，我后来忘记了自己一直在运行这个脚本，结果发现 AirDrop 功能失效了……
 
 于是，我又花了不少时间重启 AWDL：
-```command
+```bash
 sudo ifconfig awdl0 up
 ```
 
 执行完毕后，检查 AWDL 状态：
-```command
+```bash
 ifconfig awdl0
 ```
 
 在输出中找到 `status` 项。如果 `status` 仍显示为 `inactive`，可以尝试重新初始化 Mac 的网络堆栈：
-```command
+```bash
 sudo dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
 sudo ifconfig awdl0 up
